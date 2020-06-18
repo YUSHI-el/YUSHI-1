@@ -1,0 +1,72 @@
+<!DOCTYPE htiml>
+<html>
+  <head>
+    <title>HTMLの練習</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        html,body{
+            background-color: rgb(0,255,200);
+            width: 100%;
+            margin: 0;
+        }
+        h1{
+            color: wheat;
+            width: 100%;
+            text-align: center;
+        }
+        h2,h3{
+            display: inline-block;
+        }
+        section{
+            box-sizing: border-box;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        #name{
+            background-color: rgb(200, 20, 200);
+        }
+        #party{
+            background-color: rgb(225, 100, 10);
+        }
+        #hobby{
+            background-color: rgb(30, 252, 1);
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById("name").addEventListener("click",function(){
+                alert("私の名前はゆうしです!");
+            });
+        });
+    </script>
+  </head>
+  <body>
+     <h1>ゆうしの自己紹介</h1> 
+     <section id="name">
+         <h2>名前:</h2>
+         <h3>YUSHI SATO</h3>
+         <div>ゆうしくんって呼ばれてます。</div>
+     </section>
+     <section id="party">
+        <h2>所属:</h2>
+        <h3>TDU</h3>
+        <div>東京電機大学の略です</div>
+    </section>
+    <section id="hobby">
+        <h2>趣味</h2>
+        <p>JKをたべたい。電子工作できなくもないです。
+            <a href="http://akizukidenshi.com/catalog/top.aspx">秋月電子</a>に出没します。</p>
+    </section>
+      Hello World
+    <a href="https://google.com">Google</a>
+    <a href="https://yahoo.co.jp">Yahoo!</a>
+    <ol>
+        <li>iPhone</li>
+        <li>Android</li>
+        <li>Windows Phone</li>
+    </ol>
+  </body>
+</html>
